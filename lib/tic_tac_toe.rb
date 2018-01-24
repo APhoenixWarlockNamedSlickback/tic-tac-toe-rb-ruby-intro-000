@@ -154,7 +154,7 @@ def winner(board)
 end
 
 def play(board)
-<<<<<<< HEAD
+#<<<<<<< HEAD
   while !over?(board)
     turn(board)
   end
