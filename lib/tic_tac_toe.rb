@@ -86,19 +86,19 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-<<<<<<< HEAD
+#<<<<<<< HEAD
   index = input_to_index(input)
   if !valid_move?(board,index)
     turn(board)
   end
     move(board, index, current_player(board))
-=======
+#=======
   #index = input_to_index(input)
   if !valid_move?(board, index)
     turn(board)
   end
     move(board, input, current_player(board))
->>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
+#>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
     display_board(board)
 end
 
@@ -163,9 +163,9 @@ def play(board)
   elsif draw?(board)
     puts "Cat's Game!"
   end
-=======
+#=======
   until turn_count == 9
     turn(board)
   end
->>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
+#>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 end
