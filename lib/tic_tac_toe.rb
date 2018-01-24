@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,6 +7,22 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+=======
+board = ["O", " ", " ", " ", " ", " ", " ", " ", "X"]
+
+#gameturn = 0
+
+current_player = "X"
+
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
+
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -21,16 +38,33 @@ def input_to_index(index)
   index.to_i - 1
 end
 
+<<<<<<< HEAD
 def current_player(board)
   if turn_count(board) % 2 == 0
+=======
+#index = input_to_index(input)
+
+def current_player(board)
+  if turn_count(board) % 2 == 1
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
     current_player = "X"
   else
     current_player = "O"
   end
 end
 
+<<<<<<< HEAD
 def move(board, index, current_player)
   board[index] = current_player
+=======
+def move(board, index, player = "X")
+#  if turn_count % 2 == 1
+#    current_player = "X"
+#  else
+#    current_player = "O"
+#  end
+  board[index] = player
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 end
 
 def position_taken?(board,index)
@@ -52,11 +86,19 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
+<<<<<<< HEAD
   index = input_to_index(input)
   if !valid_move?(board,index)
     turn(board)
   end
     move(board, index, current_player(board))
+=======
+  #index = input_to_index(input)
+  if !valid_move?(board, index)
+    turn(board)
+  end
+    move(board, input, current_player(board))
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
     display_board(board)
 end
 
@@ -112,6 +154,7 @@ def winner(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   while !over?(board)
     turn(board)
   end
@@ -120,4 +163,9 @@ def play(board)
   elsif draw?(board)
     puts "Cat's Game!"
   end
+=======
+  until turn_count == 9
+    turn(board)
+  end
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 end

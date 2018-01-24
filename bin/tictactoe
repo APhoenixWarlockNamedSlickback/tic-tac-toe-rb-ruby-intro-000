@@ -2,12 +2,22 @@
 
 require_relative '../lib/tic_tac_toe'
 
+<<<<<<< HEAD
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
+=======
+gameturn = 0
+
+current_player = "X"
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 
 display_board(board)
 
 turn(board)
 
+<<<<<<< HEAD
 play(board)
+=======
+index = input_to_index(input)
+>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
