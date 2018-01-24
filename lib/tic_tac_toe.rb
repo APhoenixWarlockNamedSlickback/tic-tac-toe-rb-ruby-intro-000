@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,7 +7,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-=======
+#=======
 board = ["O", " ", " ", " ", " ", " ", " ", " ", "X"]
 
 #gameturn = 0
@@ -22,7 +22,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
->>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
+#>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -38,25 +38,25 @@ def input_to_index(index)
   index.to_i - 1
 end
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 def current_player(board)
   if turn_count(board) % 2 == 0
-=======
+#=======
 #index = input_to_index(input)
 
 def current_player(board)
   if turn_count(board) % 2 == 1
->>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
+#>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
     current_player = "X"
   else
     current_player = "O"
   end
 end
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 def move(board, index, current_player)
   board[index] = current_player
-=======
+#=======
 def move(board, index, player = "X")
 #  if turn_count % 2 == 1
 #    current_player = "X"
@@ -64,7 +64,7 @@ def move(board, index, player = "X")
 #    current_player = "O"
 #  end
   board[index] = player
->>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
+#>>>>>>> 7836ca0186dd65722b721a62c35042c3a70c1b3f
 end
 
 def position_taken?(board,index)
